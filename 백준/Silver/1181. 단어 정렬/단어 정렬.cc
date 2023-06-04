@@ -13,17 +13,13 @@ int main() {
 	int N;
 
 	cin >> N;
-	for (int i = 0; i < N; i++)
-	{
-		cin >> word[i];
-	}
+	for (int i = 0; i < N; i++) cin >> word[i];
+	
 	sort(word, word + N, cmp);
 
 	for (int i = 0; i < N; i++)
 	{
-		if (word[i] == word[i - 1]) {
-			continue;
-		}
+		if (word[i] == word[i - 1]) continue;
 		cout << word[i] << "\n";
 	}
 }

@@ -13,8 +13,8 @@ bool DiretedGraph(int curPos, int& destiny, vector<vector<int>>& road)
 	
 	if (curPos == destiny) // 목적지라면 true
 	{
-		return true; 
 		visited[curPos] = false;
+		return true; 
 	} 
 
 	if (visited[curPos]) return false; // 방문한 곳이라면
